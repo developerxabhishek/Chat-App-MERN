@@ -2,6 +2,15 @@
 This is a real-time chat application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It allows users to register, log in, and chat with other users in real-time.this is a 
 task which is assigned by techdome too me.
 
+## How to run this application locally...
+-- Clone or download the zip file of the application for running it locally..
+-- After that install all the dependency of the project..
+-- For frontend run npm install  command from frontend directory..
+-- For backend run npm install command from root directory..
+-- After that for starting this server on development mode  run npm run dev command from root directory..
+-- For running frontend on development mode run npm run dev command in frontend  directory..
+
+
 ## Features
 
 - User authentication: Users can register and log in securely .
