@@ -51,7 +51,7 @@ const Navbar = () => {
             </GroupChatModal>
           </div>
         ) : (
-          <h3>Smiles</h3>
+          <h3>Abhishek</h3>
         )}
       </div>
       <div>
