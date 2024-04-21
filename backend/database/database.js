@@ -2,9 +2,7 @@ import mongoose from "mongoose";
 
 const connectDatabase = () => {
   mongoose
-    .connect(
-      "mongodb+srv://abhishek:abhishek@cluster0.gikozxp.mongodb.net/mychatApp"
-    )
+    .connect(process.env.MONGO_URL)
     .then(() => {
       console.log("Sucessfully connected  to database");
     })

@@ -15,15 +15,12 @@ const Profile = () => {
     if (pics.type === "image/jpeg" || pics.type === "image/png") {
       const data = new FormData();
       data.append("file", pics);
-      data.append("upload_preset", "chatting-app");
-      data.append("cloud_name", "mern-chat-application");
-      fetch(
-        "https://api.cloudinary.com/v1_1/mern-chat-application/image/upload",
-        {
-          method: "post",
-          body: data,
-        }
-      )
+      data.append("upload_preset", "lzpuztnj");
+      data.append("cloudName", "djvtl7yhj");
+      fetch("https://api.cloudinary.com/v1_1/djvtl7yhj/image/upload", {
+        method: "post",
+        body: data,
+      })
         .then((res) => res.json())
         .then((data) => {
           setImg(data.url.toString());

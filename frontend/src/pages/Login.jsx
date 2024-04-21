@@ -108,7 +108,7 @@ const Login = () => {
             </button>
           </div>
           <div className="btn_container">
-            <button
+            {/* <button
               className="btn"
               disabled={loading}
               onClick={() => {
@@ -120,7 +120,7 @@ const Login = () => {
               }}
             >
               <>Guest User</>
-            </button>
+            </button> */}
           </div>
         </form>
       </section>

@@ -17,7 +17,7 @@ const registerUser = async (req, res, next) => {
       username,
       email,
       password: hashedPassword,
-      pic,
+      pic: "https://avatar.iran.liara.run/public",
       isOnline: true,
     });
 

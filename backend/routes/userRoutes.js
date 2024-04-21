@@ -1,4 +1,5 @@
 import express from "express";
+const router = express.Router();
 import {
   registerUser,
   authUser,
@@ -8,10 +9,6 @@ import {
 } from "../controllers/userControllers.js";
 import { protect } from "../middleware/authMiddleware.js";
 
-const router = express.Router();
-router.get("/abhi", (req, res) => {
-  res.send("working");
-});
 router.route("/").post(registerUser).get(protect, allUsers);
 router.post("/login", authUser).get("/logout", protect, logout);
 router.post("/update", protect, updateUser);
