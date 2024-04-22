@@ -62,6 +62,7 @@ Socket.IO was used to enable real-time messaging functionality in the applicatio
 - once you have created you account you will be redirected into chat userdashboard where you will have chat new group search profile and logout option...
 - if you want to talk to someone personally then you can do it by searching that person and sending him message..
 - if you want to do group conversation then you can do it by clicking on New group option and selecting the peoples with whom you want to talk with remember only admin can add or remove someone from group..
+- By Click on all group button all groups will be displayed if you want to join those group you can join by simply clicking on join group button
 - By clicking on profile Button your details will be displayed you can update you details as well..
 - By clicking on notification icon all notification will be displayed..
 - By clicking on logout button you will be redirecected in Homepage....
