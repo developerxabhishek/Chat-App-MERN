@@ -49,6 +49,13 @@ const Navbar = () => {
             <GroupChatModal>
               <h3>New Group</h3>
             </GroupChatModal>
+        <Link to="AllGroup">  <h1 style={{marginLeft:"50px"}}>All Groups</h1></Link>
+
+
+
+
+
+
           </div>
         ) : (
           <h3>Abhishek</h3>

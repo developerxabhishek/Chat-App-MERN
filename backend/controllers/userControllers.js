@@ -20,7 +20,6 @@ const registerUser = async (req, res, next) => {
       pic: "https://avatar.iran.liara.run/public",
       isOnline: true,
     });
-
     // Delete the password from the response
     user.password = undefined;
 

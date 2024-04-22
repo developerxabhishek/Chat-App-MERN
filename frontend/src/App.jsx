@@ -9,6 +9,7 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import { ChatProvider, ProtectedRoute } from "../Contest/ChatProvider";
 import Profile from "./pages/Profile";
+import AllGroup from "./components/AllGroup";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route element={<ProtectedRoute />}>
             <Route exact path="/" element={<Home />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/AllGroup" element={<AllGroup />} />
           </Route>
         </Routes>
       </ChatProvider>

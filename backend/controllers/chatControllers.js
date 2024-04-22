@@ -4,7 +4,6 @@ import User from "../models/userModel.js";
 
 const accessChat = async (req, res, next) => {
   const { userId } = req.body;
-
   if (!userId)
     return next(errorHandler(400, "UserId param not sent with request"));
 
@@ -95,6 +94,17 @@ const createGroupChat = async (req, res, next) => {
       .populate("groupAdmin");
 
     res.status(200).json(fullGroupChat);
+  } catch (error) {
+    next(error);
+  }
+};
+
+const getAllGroup = async (req, res) => {
+  try {
+    const groupChat = await Chat.find({ isGroupChat: true })
+      .populate("users")
+      .populate("groupAdmin");
+    res.status(200).json(groupChat);
   } catch (error) {
     next(error);
   }
@@ -200,6 +210,9 @@ const changeGroupPic = async (req, res, next) => {
   }
 };
 
+//function for requesting to join grp
+
+
 export {
   accessChat,
   fetchChats,
@@ -208,4 +221,6 @@ export {
   removeFromGroup,
   addToGroup,
   changeGroupPic,
+  getAllGroup,
+  
 };

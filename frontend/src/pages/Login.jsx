@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 
+
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [file, setFile] = useState({
@@ -62,6 +63,7 @@ const Login = () => {
       error: null,
       loading: false,
     });
+    
     localStorage.setItem("userInfo", JSON.stringify(data));
     toast.success("Logging successful");
     navigate("/", { replace: true });

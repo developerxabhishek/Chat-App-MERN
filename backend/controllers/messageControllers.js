@@ -45,6 +45,10 @@ const sendMessage = async (req, res, next) => {
   }
 };
 
+
+
+
+
 const allMessage = async (req, res, next) => {
   try {
     const messages = await Message.find({ chat: req.params.chatId })

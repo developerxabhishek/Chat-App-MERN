@@ -8,6 +8,8 @@ import {
   removeFromGroup,
   addToGroup,
   changeGroupPic,
+  getAllGroup,
+  
 } from "../controllers/chatControllers.js";
 
 const router = express.Router();
@@ -19,5 +21,6 @@ router.route("/rename").put(protect, renameGroup);
 router.route("/groupremove").put(protect, removeFromGroup);
 router.route("/groupadd").put(protect, addToGroup);
 router.route("/changepic").put(protect, changeGroupPic);
+router.get("/allgroups", protect, getAllGroup);
 
 export default router;
